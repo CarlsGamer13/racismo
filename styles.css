@@ -2,33 +2,23 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #f0f4f8, #dbe2e9);
-  color: #333;
+  background-color: #000; /* Fundo preto */
+  color: #f0f0f0; /* Texto claro para contraste */
 }
 
 /* TOPO */
 .topo {
-  background-color: #222;
-  color: #fafafa; /* Melhor contraste */
+  background-color: #111;
+  color: goldenrod; /* Destaque dourado */
   padding: 20px;
   text-align: center;
 }
 
-.logo {
+.destaque {
   margin: 0;
-  font-size: 2.5em;
-}
-
-.menu a {
-  color: #fafafa; /* Melhor contraste */
-  margin: 0 15px;
-  text-decoration: none;
+  font-size: 2.8em;
   font-weight: bold;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-  color: #ddd;
+  color: goldenrod;
 }
 
 /* CONTEÚDO PRINCIPAL */
@@ -40,12 +30,14 @@ body {
 .introducao h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: #ffd700; /* Título em dourado */
 }
 
 .introducao p {
   font-size: 1.2em;
   max-width: 800px;
   margin: 10px auto;
+  color: #ddd;
 }
 
 /* GALERIA */
@@ -65,24 +57,25 @@ body {
   width: 100%;
   max-width: 300px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Sombra clara para destacar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imagens-galeria img:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
 }
 
 .imagens-galeria figcaption {
   margin-top: 10px;
   font-size: 1em;
-  color: #555;
+  color: #ccc;
 }
 
 /* RODAPÉ */
 .rodape {
-  background-color: #222;
-  color: #fafafa; /* Melhor contraste */
+  background-color: #111;
+  color: #f0f0f0;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
@@ -92,30 +85,5 @@ body {
 @media (max-width: 480px) {
   .principal {
     padding: 20px 10px;
-  }
-}
-
-/* TEMA ESCURO AUTOMÁTICO */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #1a1a1a;
-    color: #eee;
-  }
-
-  .topo, .rodape {
-    background-color: #000;
-    color: #eee;
-  }
-
-  .menu a {
-    color: #eee;
-  }
-
-  .menu a:hover {
-    color: #ccc;
-  }
-
-  .imagens-galeria figcaption {
-    color: #ccc;
   }
 }
