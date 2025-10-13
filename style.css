@@ -1,32 +1,74 @@
 body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      background-color: #fff;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 800px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #333;
-    }
-    footer {
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: #fff;
-      background-color: #008000;
-      padding: 20px;
-      margin-top: 40px;
-    }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #dbe2e9);
+  color: #333;
+}
+
+.topo {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.menu a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.principal {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.introducao h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.introducao p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.galeria {
+  margin-top: 40px;
+}
+
+.imagens-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.imagens-galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.imagens-galeria figcaption {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.rodape {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
