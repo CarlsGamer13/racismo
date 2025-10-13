@@ -1,1 +1,152 @@
+index html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria - Racismo no Futebol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+  <!-- TOPO -->
+  <header class="topo">
+    <h1 class="logo">Racismo no Futebol</h1>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="principal">
+
+    <!-- Texto de introdução -->
+    <section class="introducao">
+      <h2>Galeria sobre Racismo no Futebol</h2>
+      <p>
+        O racismo no futebol é uma realidade que afeta jogadores, torcedores e toda a comunidade esportiva.
+        Manifestações de preconceito racial ocorrem dentro e fora dos estádios, exigindo ações firmes de combate e conscientização.
+      </p>
+      <p>
+        Esta galeria reúne imagens que ilustram momentos de resistência, denúncia e superação no esporte.
+        As imagens podem ser substituídas por registros de campanhas educativas ou trabalhos produzidos pelos alunos.
+      </p>
+    </section>
+
+    <!-- Galeria de imagens -->
+    <section class="galeria">
+      <div class="imagens-galeria">
+        <figure>
+          <img src="imagem/racismo1.jpeg" alt="Jogadores protestando contra o racismo">
+          <figcaption>Jogadores protestando contra o racismo</figcaption>
+        </figure>
+        <figure>
+          <img src="imagem/racismo2.jpeg" alt="Torcedores com cartazes antirracistas">
+          <figcaption>Torcedores com cartazes antirracistas</figcaption>
+        </figure>
+        <figure>
+          <img src="imagem/racismo3.jpg" alt="Jogador vítima de racismo sendo apoiado por colegas">
+          <figcaption>Jogador sendo apoiado por colegas</figcaption>
+        </figure>
+        <figure>
+          <img src="imagem/racismo4.jpg" alt="Campanha contra o racismo nos estádios">
+          <figcaption>Campanha contra o racismo nos estádios</figcaption>
+        </figure>
+        <figure>
+          <img src="imagem/racismo5.jpeg" alt="Imagem representando a luta contra o preconceito no futebol">
+          <figcaption>Luta contra o preconceito no futebol</figcaption>
+        </figure>
+        <figure>
+          <img src="imagem/racismo6.jpg" alt="Imagem representando diversidade e inclusão no esporte">
+          <figcaption>Diversidade e inclusão no esporte</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2025 — Projeto escolar. Feito por: <b>Carlos 2B</b></p>
+  </footer>
+
+</body>
+</html>
+
+style.css 
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f0f4f8, #dbe2e9);
+  color: #333;
+}
+
+.topo {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.menu a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.principal {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.introducao h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.introducao p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.galeria {
+  margin-top: 40px;
+}
+
+.imagens-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.imagens-galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.imagens-galeria figcaption {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.rodape {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
