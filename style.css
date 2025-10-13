@@ -1,3 +1,4 @@
+/* CONFIGURAÇÕES GERAIS */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,9 +6,10 @@ body {
   color: #333;
 }
 
+/* TOPO */
 .topo {
   background-color: #222;
-  color: white;
+  color: #fafafa; /* Melhor contraste */
   padding: 20px;
   text-align: center;
 }
@@ -18,12 +20,18 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: #fafafa; /* Melhor contraste */
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
 
+.menu a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+/* CONTEÚDO PRINCIPAL */
 .principal {
   padding: 40px 20px;
   text-align: center;
@@ -40,6 +48,7 @@ body {
   margin: 10px auto;
 }
 
+/* GALERIA */
 .galeria {
   margin-top: 40px;
 }
@@ -57,6 +66,11 @@ body {
   max-width: 300px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagens-galeria img:hover {
+  transform: scale(1.05);
 }
 
 .imagens-galeria figcaption {
@@ -65,10 +79,43 @@ body {
   color: #555;
 }
 
+/* RODAPÉ */
 .rodape {
   background-color: #222;
-  color: white;
+  color: #fafafa; /* Melhor contraste */
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
+}
+
+/* RESPONSIVIDADE EXTRA */
+@media (max-width: 480px) {
+  .principal {
+    padding: 20px 10px;
+  }
+}
+
+/* TEMA ESCURO AUTOMÁTICO */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #eee;
+  }
+
+  .topo, .rodape {
+    background-color: #000;
+    color: #eee;
+  }
+
+  .menu a {
+    color: #eee;
+  }
+
+  .menu a:hover {
+    color: #ccc;
+  }
+
+  .imagens-galeria figcaption {
+    color: #ccc;
+  }
 }
