@@ -1,89 +1,101 @@
-/* CONFIGURAÇÕES GERAIS */
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000; /* Fundo preto */
-  color: #f0f0f0; /* Texto claro para contraste */
+  background-color: #1c1c1c; /* fundo escuro temático */
+  color: #f0f0f0;
+  line-height: 1.6;
+  text-align: center; /* centraliza todos os textos */
 }
 
-/* TOPO */
+/* Cabeçalho */
 .topo {
-  background-color: #111;
-  color: goldenrod; /* Destaque dourado */
+  background-color: #000;
+  color: #fff;
   padding: 20px;
-  text-align: center;
 }
 
-.destaque {
-  margin: 0;
-  font-size: 2.8em;
-  font-weight: bold;
-  color: goldenrod;
-}
-
-/* CONTEÚDO PRINCIPAL */
-.principal {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.introducao h2 {
+.logo {
   font-size: 2em;
-  margin-bottom: 20px;
-  color: #ffd700; /* Título em dourado */
+  font-weight: bold;
 }
 
-.introducao p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 10px auto;
-  color: #ddd;
+/* Menu de navegação */
+.menu {
+  margin-top: 10px;
 }
 
-/* GALERIA */
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffcc00;
+}
+
+/* Conteúdo principal */
+.principal {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Caixa de introdução e outras seções */
+.caixa {
+  background-color: #2e2e2e;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.caixa h2 {
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.caixa p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Galeria de imagens */
 .galeria {
-  margin-top: 40px;
-}
-
-.imagens-galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
 .imagens-galeria img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2); /* Sombra clara para destacar */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s;
 }
 
 .imagens-galeria img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
 }
 
-.imagens-galeria figcaption {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #ccc;
-}
-
-/* RODAPÉ */
+/* Rodapé */
 .rodape {
-  background-color: #111;
-  color: #f0f0f0;
+  background-color: #000;
+  color: #fff;
   text-align: center;
   padding: 15px;
   font-size: 0.9em;
-}
-
-/* RESPONSIVIDADE EXTRA */
-@media (max-width: 480px) {
-  .principal {
-    padding: 20px 10px;
-  }
+  margin-top: 40px;
 }
