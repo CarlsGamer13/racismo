@@ -1,122 +1,63 @@
-/* CONFIGURAÇÕES GERAIS */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #f0f4f8, #dbe2e9);
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria - Cultura Indígena</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* TOPO */
-.topo {
-  background-color: #222;
-  color: #fafafa; /* Melhor contraste */
-  padding: 20px;
-  text-align: center;
-}
+  <!-- TOPO -->
+  <header class="topo">
+    <h1 class="logo">Cultura Indígena</h1>
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="historia.html">História</a>
+      <a href="galeria.html">Galeria</a>
+    </nav>
+  </header>
 
-.logo {
-  margin: 0;
-  font-size: 2.5em;
-}
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="principal">
 
-.menu a {
-  color: #fafafa; /* Melhor contraste */
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    <!-- Texto de introdução -->
+    <div class="caixa introducao">
+      <div class="texto">
+        <h2>Galeria de Cultura Indígena</h2>
+        <p>
+          A cultura indígena no Brasil é representada em diversos aspectos:
+          grafismos, pinturas, objetos do cotidiano, festas, rituais, arte e
+          relação com a natureza.
+        </p>
+        <p>
+          Esta galeria reúne algumas imagens simbólicas para valorizar a
+          diversidade e a riqueza dos povos indígenas. As imagens podem ser
+          trocadas por fotos de fontes confiáveis ou desenhos feitos pelos
+          próprios alunos.
+        </p>
+      </div>
+    </div>
 
-.menu a:hover {
-  text-decoration: underline;
-  color: #ddd;
-}
+    <!-- Galeria de imagens -->
+    <div class="caixa galeria">
+      <div class="imagens-galeria">
+        <img src="IMAGEM/indigena2.jpg" alt="Índias sentadas com suas roupas tradicionais">
+        <img src="IMAGEM/indigena3.jpg" alt="Índios usando computador">
+        <img src="IMAGEM/indigena4.jpeg" alt="Índios dançando e segurando a bandeira do Brasil">
+        <img src="IMAGEM/indigena5.png" alt="Índia idosa aprendendo a usar o computador">
+        <img src="IMAGEM/indigena6.jpg" alt="Imagem demonstrando a cultura indigena">
+        <img src="IMAGEM/indigena7.jpeg" alt="Imagem demonstrando a cultura indigena">
+        <img src="imagem/racismo6.jpg" alt="">
+      </div>
+    </div>
 
-/* CONTEÚDO PRINCIPAL */
-.principal {
-  padding: 40px 20px;
-  text-align: center;
-}
+  </main>
 
-.introducao h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2025 — Projeto escolar. Feito por: <b>Prof.ª Nane</b></p>
+  </footer>
 
-.introducao p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 10px auto;
-}
-
-/* GALERIA */
-.galeria {
-  margin-top: 40px;
-}
-
-.imagens-galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  padding: 20px;
-}
-
-.imagens-galeria img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
-
-.imagens-galeria img:hover {
-  transform: scale(1.05);
-}
-
-.imagens-galeria figcaption {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #555;
-}
-
-/* RODAPÉ */
-.rodape {
-  background-color: #222;
-  color: #fafafa; /* Melhor contraste */
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-}
-
-/* RESPONSIVIDADE EXTRA */
-@media (max-width: 480px) {
-  .principal {
-    padding: 20px 10px;
-  }
-}
-
-/* TEMA ESCURO AUTOMÁTICO */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: #1a1a1a;
-    color: #eee;
-  }
-
-  .topo, .rodape {
-    background-color: #000;
-    color: #eee;
-  }
-
-  .menu a {
-    color: #eee;
-  }
-
-  .menu a:hover {
-    color: #ccc;
-  }
-
-  .imagens-galeria figcaption {
-    color: #ccc;
-  }
-}
+</body>
+</html>
 
